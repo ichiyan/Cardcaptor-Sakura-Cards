@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'Garton';
+    src: url('fonts/garton.normal.woff') format('woff'),
+         url('fonts/garton.normal.woff2') format('woff2');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body {
+    background-image: url('images/cherry-blossoms-japan.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Garton", sans-serif;
+    min-height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1{
+      font-size: 10rem;
+      font-weight: 900;
+      text-align: center;
+      text-shadow: 3px 3px 10px #fff, 3px 3px 10px #fff;
   }
-}
+
+  span, figcaption{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  span{
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  figure{
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+  }
+
+  figcaption{
+    text-shadow: 3px 3px 10px #fff, 3px 3px 10px #fff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .card-img{
+      width: 25rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .instructions{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  
